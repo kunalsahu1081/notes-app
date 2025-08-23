@@ -11,16 +11,9 @@ const Header = () => {
 
                 <div className={styles.headerTitle}>
 
-                    Notes App
+                    Notes with structure
 
                 </div>
-
-                <div className={styles.headerSTitle}>
-
-                    Structured notes for busy minds
-
-                </div>
-
 
             </section>
 

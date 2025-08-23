@@ -1,0 +1,17 @@
+.btnAddNew {
+
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom:50px;
+    left: calc(50% - 25px);
+    border-radius: 25px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+
+}

@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    padding: 20px;
+    padding: 20px 40px;
 
 
     .headerTitleSection {
@@ -20,15 +20,17 @@
         color: var(--secondary-text-color);
 
         .headerTitle {
-            font-size: 24px;
-            font-weight: 600;
-            font-family: "fira sans", sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            font-family: "vanteque", sans-serif;
+            letter-spacing: 1px;
         }
 
         .headerSTitle {
-            font-size: 14px;
-            font-weight: 500;
-            font-family: "fira sans", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "vanteque", sans-serif;
+            letter-spacing: 1px;
         }
 
     }

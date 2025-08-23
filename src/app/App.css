@@ -1,0 +1,21 @@
+
+.bottomMainContainer {
+    display: flex;
+    flex: 1;
+
+    .mainContainer {
+
+        display: flex;
+        flex: 1 1;
+        flex-direction: column;
+        position: relative;
+
+    }
+}
+
+.appContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
