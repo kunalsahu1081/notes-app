@@ -9,7 +9,7 @@ const SideMenu = () => {
     const [is_expanded, set_is_expanded] = useState(false);
 
     useEffect(() => {
-        set_icon_color(document.documentElement.style.getPropertyValue('--primary-text-color'))
+        set_icon_color(getComputedStyle(document.documentElement).getPropertyValue('--primary-text-color'))
     }, [location.pathname]);
 
     return <>
