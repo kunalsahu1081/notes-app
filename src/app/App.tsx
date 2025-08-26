@@ -5,6 +5,7 @@ import NewNoteButton from "../components/new-note-button";
 import {Editor, Toolbar} from "lexical-react-editor";
 import {MyNoteNode} from "../plugins/NoteNode.ts";
 import 'lexical-react-editor/styles/lexical-react-editor-e9xST51w.css';
+import NoteEditor from "../components/note-editor";
 
 function App() {
 
@@ -21,13 +22,7 @@ function App() {
 
                     <NewNoteButton />
                     
-                    <Editor nodes={[MyNoteNode]} >
-
-                        <Toolbar>
-
-                        </Toolbar>
-
-                    </Editor>
+                    <NoteEditor />
 
 
                 </main>

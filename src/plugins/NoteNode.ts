@@ -1,4 +1,5 @@
-import {$applyNodeReplacement, ElementNode, } from "lexical";
+import {$applyNodeReplacement, ElementNode} from "lexical";
+import type {LexicalNode} from "lexical"
 
 
 export class MyNoteNode extends ElementNode {
@@ -6,7 +7,7 @@ export class MyNoteNode extends ElementNode {
     __custom_inline_style: string;
 
     static getType(): string {
-        return 'my-xx-checkbox-node';
+        return 'my-xx-note-node';
     }
 
     static clone(node: MyNoteNode): MyNoteNode {
@@ -29,7 +30,7 @@ export class MyNoteNode extends ElementNode {
 
         const externalDiv = document.createElement('div');
 
-        externalDiv.style.cssText = "display: flex; flex-direction: column; padding: 8px;" + this.__custom_inline_style;
+        externalDiv.style.cssText = "display: flex; flex-direction: column; padding: 8px; margin-top: 120px;" + this.__custom_inline_style;
         externalDiv.id = this.__key;
 
         return externalDiv;
@@ -48,7 +49,7 @@ export class MyNoteNode extends ElementNode {
 
         if (_prevNode.__custom_inline_style !== this.__custom_inline_style) {
 
-            _dom.style.cssText = "display: flex; flex-direction: column; padding: 8px;" + this.__custom_inline_style;
+            _dom.style.cssText = "display: flex; flex-direction: column; padding: 8px; margin-top: 120px;" + this.__custom_inline_style;
 
             return  true;
         }
@@ -70,7 +71,7 @@ export function $createMyNoteNode(custom_inline_style: string = ""): { node: MyN
 
 }
 
-export function $isMyNoteNode(node: any | null | undefined,
+export function $isMyNoteNode(node: LexicalNode | null | undefined,
 ): node is MyNoteNode {
     return node instanceof MyNoteNode;
 }
