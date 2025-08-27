@@ -12,3 +12,33 @@ body {
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Winky Rough" ;
+}
+
+button {
+    font-family: "Winky Rough";
+}
+
+.italics {
+
+   font-style: italic;
+
+}
+
+span {
+    font-size: 16px;
+}
+
+.underline {
+   text-decoration: underline;
+}
+
+.line-through {
+   text-decoration: line-through;
+}
+
+.line-through-strike {
+   text-decoration: underline line-through;
+}

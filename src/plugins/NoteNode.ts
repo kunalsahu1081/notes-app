@@ -30,7 +30,7 @@ export class MyNoteNode extends ElementNode {
 
         const externalDiv = document.createElement('div');
 
-        externalDiv.style.cssText = "display: flex; flex-direction: column; padding: 8px; margin-top: 120px;" + this.__custom_inline_style;
+        externalDiv.style.cssText = "display: flex; flex-direction: column; padding: 12px; margin-top: 120px;" + this.__custom_inline_style;
         externalDiv.id = this.__key;
 
         return externalDiv;
@@ -49,7 +49,7 @@ export class MyNoteNode extends ElementNode {
 
         if (_prevNode.__custom_inline_style !== this.__custom_inline_style) {
 
-            _dom.style.cssText = "display: flex; flex-direction: column; padding: 8px; margin-top: 120px;" + this.__custom_inline_style;
+            _dom.style.cssText = "display: flex; flex-direction: column; padding: 12px; margin-top: 120px;" + this.__custom_inline_style;
 
             return  true;
         }

@@ -14,11 +14,13 @@
     "@lexical/react": "0.32.1"
   },
   "dependencies": {
-    "lexical-react-editor": "0.0.9",
+    "lexical-react-editor": "0.0.12",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
-    "sass": "^1.90.0"
+    "sass": "^1.90.0",
+    "lexical": "0.32.1",
+    "@lexical/react": "0.32.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",

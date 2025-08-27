@@ -2,8 +2,6 @@ import './App.css'
 import Header from "../components/header";
 import SideMenu from "../components/side-menu";
 import NewNoteButton from "../components/new-note-button";
-import {Editor, Toolbar} from "lexical-react-editor";
-import {MyNoteNode} from "../plugins/NoteNode.ts";
 import 'lexical-react-editor/styles/lexical-react-editor-e9xST51w.css';
 import NoteEditor from "../components/note-editor";
 
@@ -23,7 +21,6 @@ function App() {
                     <NewNoteButton />
                     
                     <NoteEditor />
-
 
                 </main>
 

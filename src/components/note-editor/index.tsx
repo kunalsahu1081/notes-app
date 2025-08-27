@@ -16,6 +16,7 @@ const NoteEditor = () => {
                 editorClassName: styles.mainEditorContext,
                 placeholderClassName: styles.editorPlaceholder,
                 toolbarButton: styles.buttonClassname,
+                toolbarButtonActive: styles.activeButtonClassname,
             }}
             nodes={[MyNoteNode]}
         >
